@@ -1,0 +1,18 @@
+<div *ngIf="gifs.length > 0">
+    <h1>Search Results</h1>
+    <table>
+        <tr *ngFor="let g of gifs">
+            <td>
+                <a [href]="g.url">
+                    <img [src]=g.imageUrl>
+                </a>
+            </td>
+            <td>
+                GIF ID: {{ g.id }}
+                <br>
+                <strong>{{ g.title }}</strong>
+            </td>
+        </tr>
+    </table>
+</div>
+

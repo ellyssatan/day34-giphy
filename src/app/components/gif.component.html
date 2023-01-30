@@ -1,0 +1,21 @@
+<h1>Search a GIF</h1>
+<form [formGroup]="gifForm" (ngSubmit)="processForm()">
+    <input type="text" formControlName="prompt" size="20">
+    <select formControlName="limit">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+    </select>
+    <button type="submit">Search</button>
+</form>
+
+<!-- <table>
+    <tr *ngFor="let g of data">
+        <td><img src="{{g.url}}"></td>
+        <td>
+            {{g.id}}
+            {{g.title}}
+            {{g.rating}}
+        </td>
+    </tr>
+</table> -->
